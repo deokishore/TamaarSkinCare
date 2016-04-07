@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome To Tamaar</title>
+<meta charset="utf-8">
+<link href="css/user-login.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+</head>
+<body>
+	<header>
+    	<div class="logo" style="background:#fff; width:100%">
+        	<img src="images/logo.png" alt="Tamaar Inc">
+        </div>
+    </header>
+	<!-- start-section -->
+    <section>
+    	<!-- start-login-form -->
+        <div class="login-form">
+      		<h1>Sign In</h1>
+            <h2>
+                <a href="javascript:void(0);">Create Account</a>
+            </h2>
+      		<form method="post" action="index.html" name="userLogin" onsubmit="return checkForm(this);">
+            	<ul>
+                    <li>
+                      <input type="text" class="text" name="userName" id="userName" value="User Name" onfocus="this.value = '';" onblur="if (this.value == '') 	
+                      {this.value = 'User Name';}" >
+                      <a href="javascript:void(0);" class=" icon user"></a> 
+               		</li>
+        			<li>
+          				<input type="password" value="Password" name="userPassword" id="userPassword" onfocus="this.value = '';" onblur="if (this.value == '') 
+                        {this.value = 'Password';}">
+          				<a href="javascript:void(0);" class=" icon lock"></a> 
+             		</li>
+        		</ul>
+        		<div class ="forgot">
+          			<h3>
+                    	<a href="javascript:void(0);">Forgot Password?</a>
+                	</h3>
+          			<input type="submit" onclick="myFunction();" value="Sign In" >
+         		 	<a href="javascript:void(0);" class=" icon arrow"></a>
+        		</div>
+      		</form>
+    	</div>
+        <!-- end-login-form --> 
+    
+        <!-- start-copyright -->
+        <div class="copy-right">
+      		<p>Copyright &copy;2013 - All Rights Reserved - <a href="javascript:void(0);">Tamaar.com</a></p>
+    	</div>
+        <!-- end-copyright -->
+    </section>
+	<!-- end-section -->
+</body>
+</html>
